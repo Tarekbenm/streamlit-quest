@@ -1,2 +1,2 @@
 import streamlit as st
-st.write("Helle Wilders, welcom to my application")
+st.write("Hello Wilders, welcom to my application")
