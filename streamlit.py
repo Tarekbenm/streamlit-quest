@@ -8,9 +8,11 @@ st.write(df_weather)
 st.line_chart(df_weather['MAX_TEMPERATURE_C'])
 
 import seaborn as sns
-viz_correlation = sns.heatmap(df_weather.drop("OPINION",  axis=1).corr(), 
+viz_correlation = sns.heatmap(df_weather.drop("OPINION", ).corr(), 
 								center=0,
 								cmap = "vlag"
 								)
 
 st.pyplot(viz_correlation.figure)
+st.clear_cache()
+
